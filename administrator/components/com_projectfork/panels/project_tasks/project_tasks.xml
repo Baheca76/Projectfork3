@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+    <name>project_tasks</name>
+	<title>PFL_PROJECT_TASKS</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>project_details_left</position>
+	<files>
+	   <file>project_tasks.php</file>
+	</files>
+	<params>
+	   <param type="slider_start" title="PFL_LIST_SETTINGS" id="-list"/>
+	   <param type="select" name="tlink" title="PFL_TASK_LINK" desc="PFL_TASK_LINK_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="text" name="limit" value="10" title="PFL_LIST_LIMIT" desc="PFL_LIST_LIMIT_DESC" size="5"/>
+	   <param type="select" name="ob" title="PFL_ORDER_BY">
+	      <option value="t.cdate">CREATED_BY</option>
+	      <option value="t.title">TITLE</option>
+	      <option value="u.first_name">TASK_RESPONSIBLE</option>
+	      <option value="project_name">PROJECT</option>
+	      <option value="t.priority">PRIORITY</option>
+	      <option value="t.progress">PROGRESS</option>
+	      <option value="t.edate">DEADLINE</option>
+	   </param>
+	   <param type="select" name="od" title="PFL_ORDER_DIR">
+	      <option value="ASC">ORDER_ASC</option>
+	      <option value="DESC">ORDER_DESC</option>
+	   </param>
+	   <param type="slider_end"/>
+	   <param type="slider_start" title="PFL_FILTER_SETTINGS" id="-filter"/>
+	   <param type="select" name="assigned" title="ASSIGNED_TO">
+	      <option value="1">EVERYONE</option>
+	      <option value="2">ME</option>
+	   </param>
+	   <param type="select" name="status" title="PFL_STATUS">
+	      <option value="0">ALL</option>
+	      <option value="1">INCOMPLETE</option>
+	      <option value="2">COMPLETE</option>
+	   </param>
+	   <param type="select" name="priority" title="PRIORITY">
+	      <option value="0">ALL</option>
+	      <option value="1">PRIO_VERY_LOW</option>
+	      <option value="2">PRIO_LOW</option>
+	      <option value="3">PRIO_MEDIUM</option>
+	      <option value="4">PRIO_HIGH</option>
+	      <option value="5">PRIO_VERY_HIGH</option>
+	   </param>
+	   <param type="slider_end"/>
+	</params>
+</install>

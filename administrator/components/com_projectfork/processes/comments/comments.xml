@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="process" version="3.0">
+    <name>comments</name>
+	<title>PFL_COMMENTS</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>system_startup</position>
+	<files>
+	   <file>comments.php</file>
+	</files>
+	<params>
+	   <param name="use_ce" title="PFL_USE_EDITOR" desc="PFL_USE_EDITOR_DESC" type="select">
+	      <option value="0">PFL_NO</option>
+	      <option value="1">PFL_YES</option>
+	   </param>
+	</params>
+</install>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+    <name>cp_weblinks</name>
+	<title>WEBLINKS</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>controlpanel_right</position>
+	<files folder="data"></files>
+    <params>
+        <param type="select" name="pflinks" title="SHOW_PF_LINKS" desc="SHOW_PF_LINKS_DESC">
+            <option value="0">PFL_NO</option>
+            <option value="1">PFL_YES</option>
+        </param>
+        <param type="textarea" name="clinks" title="CUSTOMWLINKS" desc="CUSTOMWLINKS_DESC" rows="12" cols="30"/>
+    </params>
+</install>

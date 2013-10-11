@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="section" version="3.0">
+
+    <name>config</name>
+	<title>CONFIG</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	
+	<files folder="data"></files>
+	
+</install>

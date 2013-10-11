@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="section" version="3.0">
+
+    <name>tasks</name>
+	<title>TASKS</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	
+	<files folder="data"></files>
+	
+	<params>
+	   <param type="slider_start" title="PFL_BASIC_SETTINGS" id="-basic"/>
+	   <param type="select" name="use_editor" title="PFL_USE_EDITOR" desc="PFL_USE_EDITOR_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="use_milestones" title="PFL_ENABLE_MILESTONES" desc="PFL_ENABLE_MILESTONES_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="use_comments" title="PFL_ENABLE_COMMENTS" desc="PFL_ENABLE_COMMENTS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="slider_end"/>
+	   <param type="slider_start" title="PFL_LIST_SETTINGS" id="-list"/>
+	   <param type="select" name="list_comments" title="PFL_COUNT_COMMENTS" desc="PFL_COUNT_COMMENTS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="list_quick_finish" title="PFL_QUICK_FINISHED" desc="PFL_QUICK_FINISHED_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="use_progpercent" title="PFL_QUICK_PROGRESS" desc="PFL_QUICK_PROGRESS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="slider_end"/>
+	   <param type="slider_start" title="PFL_MILESTONE_SETTINGS" id="-milestone"/>
+	   <param type="select" name="uncat_tasks" title="PFL_UNCATEGORIZED_TASKS" desc="PFL_UNCATEGORIZED_TASKS_DESC">
+	      <option value="1">PFL_DISPLAY_BEFORE_MILESTONES</option>
+	      <option value="2">PFL_DISPLAY_AFTER_MILESTONES</option>
+	      <option value="0">PFL_HIDE</option>
+	   </param>
+	   <param type="select" name="hide_ms_empty" title="PFL_HIDE_MS_EMPTY" desc="PFL_HIDE_MS_EMPTY_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="delete_ms_tasks" title="PFL_DELETE_MS_TASKS" desc="PFL_DELETE_MS_TASKS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="copy_milestone_tasks" title="PFL_COPY_MS_TASKS" desc="PFL_COPY_MS_TASKS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="slider_end"/>
+	   <param type="slider_start" title="PFL_NOTIFICATION_SETTINGS" id="-milestone"/>
+	   <param type="select" name="notify_on_create" title="PFL_NOTIFY_ON_CREATE" desc="PFL_NOTIFY_ON_CREATE_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="notify_on_update" title="PFL_NOTIFY_ON_UPDATE" desc="PFL_NOTIFY_ON_UPDATE_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="notify_on_comment" title="PFL_NOTIFY_ON_COMMENT" desc="PFL_NOTIFY_ON_COMMENT_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="notify_author" title="PFL_NOTIFY_AUTHOR" desc="PFL_NOTIFY_AUTHOR_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="notify_assigned" title="PFL_NOTIFY_ASSIGNED" desc="PFL_NOTIFY_ASSIGNED_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="notify_members" title="PFL_NOTIFY_PROJECT_MEMBERS" desc="PFL_NOTIFY_PROJECT_MEMBERS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="slider_end"/>
+	</params>
+	
+</install>

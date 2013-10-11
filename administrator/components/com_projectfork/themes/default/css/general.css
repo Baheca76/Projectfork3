@@ -1,0 +1,778 @@
+/* General */
+/* Hiding wizards for beta */
+#pf_panel_pf_wizard{
+display:none;
+}
+#pf-body ul li {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+#form-login li{
+background:none;
+}
+/* Hiding wizards for beta
+#pf_panel_pf_wizard{
+display:none;
+} */
+/* Hiding table data on cpanel */
+.cp_events_table thead,.cp_events_table tfoot,
+.cp_tasks_table thead,.cp_tasks_table tfoot,
+.cp_events_table .pf_end_cell,
+.cp_events_table .pf_author_cell,
+.cp_tasks_table .pf_progress_cell{
+display:none;
+}
+/* Set input widths in tables 
+.pf-config .current .adminform input{
+width:30px;
+}*/
+#pf-wrapper .pf_navigation ul,
+.pf_navigation li{
+margin:0;
+padding:0;
+list-style:none;
+}
+.pf_navigation li{
+display:inline;
+}
+#pf-wrapper .pf_navigation li a{
+text-decoration:none;
+font-size:14px;
+line-height:20px;
+padding:6px 10px;
+display:block;
+float:left;
+text-decoration:none;
+}
+#pf-wrapper #pf_panel_nav_section{
+margin-bottom:0;
+}
+/*
+#pf-wrapper.pf-controlpanel #pf_panel_nav_section{
+margin-bottom:10px;
+}
+*/
+#pf-wrapper fieldset{
+border:0;
+padding:0;
+margin:10px 0;
+}
+#pf-wrapper #form-login fieldset:hover{
+border:0;
+}
+#pf-wrapper legend{
+padding:0 0 0 8px;
+font-size:14px;
+}
+/*
+.pf_navigation li a:active span{
+position:relative;
+top:1px;
+}
+*/
+#pf-wrapper{
+line-height:1;
+}
+#pf-wrapper .componentheading,
+#pf-wrapper .componentheading h1{
+line-height:1;
+font-size:16px;
+}
+#pf-wrapper .componentheading h1{
+margin:0;
+}
+.clr{
+clear:both;
+}
+.separator{
+margin:10px 0;
+}
+.strike{
+text-decoration:line-through;
+color:#BBB;
+}
+#pf-body{
+position:relative;
+}
+#pf-body p{
+line-height:1.3;
+margin-bottom:16px;
+}
+#pf-body ul,
+#pf-body ol,
+#pf-body dl{
+margin:5px 0 5px 20px;
+padding:0;
+}
+#pf-body h1{
+font-size:16px;
+line-height:18px;
+}
+#pf-body .pf_header{
+padding:5px;
+}
+#pf-wrapper .pf_header h3{
+margin:0;
+}
+/* Layout */
+.pf_welcome{
+float:right;
+position:relative;
+padding:3px 8px 3px 5px;
+line-height:22px;
+min-width:108px;
+text-align:center;
+margin: 6px 0 0 0;
+}
+.pf_welcome img{
+width:20px;
+float:left;
+height:auto;
+margin-right:5px;
+}
+#pf-wrapper .pf_welcome ul{
+visibility:hidden;
+position:absolute;
+right:5px;
+top:100%;
+margin:0;
+padding:5px 10px;
+list-style:none;
+z-index:200;
+text-align:right;
+}
+#pf-wrapper .pf_welcome ul li a{
+display:block;
+padding:2px 6px;
+}
+#pf-wrapper .pf_welcome ul li{
+line-height:1;
+}
+#pf-wrapper .pf_welcome:hover{
+cursor:pointer;
+}
+#pf-wrapper .pf_welcome:hover ul{
+visibility:visible;
+}
+.pf-return{
+text-align: center;
+padding:0 0 10px 0;
+}
+.admintable {
+width:100%;
+}
+#pf-cpanel-left{
+float:left;
+width:55%;
+}
+#pf-cpanel-right{
+float:right;
+width:44%;
+}
+#pf-body .pf-panel-body,
+#pf_panel_system_messages .pf-panel-body{
+padding:10px;
+}
+#pf-wrapper .moduletable{
+margin-bottom:10px;
+}
+#pf-header #pf_panel_quicklink_project{
+float:left;
+margin:12px 10px;
+}
+/* Section Search */
+.pfl_search{
+float:right;
+margin:8px;
+}
+.pfl_search input,
+.pfl_search select{
+margin:0 0 0 3px;
+}
+.pfl_search select{
+width:100px;
+}
+/* Main Navigation */
+#pf_nav_config,
+#pf_nav_profile,
+#pf_nav_logout{
+float:right;
+}
+/* Sub Navigation */
+.pf_navigation,
+#pf_panel_nav_section_subnav .pf_navigation.pf_nav_cal{
+height:31px;
+}
+#pf_panel_nav_section_subnav .pf_navigation{
+height:36px;
+}
+/* Hiding profile link in main nav */
+#pf_nav_profile{
+display:none;
+}
+/* Tables */
+#pf-body .admintable td{
+padding:4px 6px;
+}
+.pf_table{
+width:100%;
+}
+.pf_table{
+border-collapse:separate;
+}
+.pf_table th,.pf_table td{
+padding:4px 8px;
+}
+.pf_table tr.milestone td,
+.pf-tasks .pf_table td,
+.pf_pcat td{
+padding:8px;
+}
+.pf_table tr.pf_lastrow td{
+padding:0;
+}
+.pf_table th img{
+position:relative;
+top:4px;
+}
+.pf_table .pf_task_title{
+padding-left:39px;
+}
+.pf_table th{
+line-height:30px;
+}
+.pf-controlpanel .pf_table th{
+line-height:16px;
+}
+.project_title{
+font-size:12px;
+float:left;
+margin-right:5px;
+}
+.pf_check_header{
+width:10px;
+}
+.pf_action_header{
+width:120px;
+}
+/* Hiding extra data */
+.pf_number_header,.pf_number_cell,
+.pf_id_header,.pf_id_cell,
+.pf_replies_header,.pf_replies_cell,
+.pf_created_header,.pf_created_cell{
+display:none;
+}
+/* Logo */
+#pf_panel_theme_logo{
+padding:5px;
+float:left;
+}
+/* Messages */
+#pf-wrapper #pf_panel_system_messages ul{
+list-style:none;
+margin:0;
+padding:5px 0 0 0;
+}
+#pf_panel_system_messages ul li{
+margin:0 0 5px 0;
+}
+/* Panel Edit Button */
+.pf_order{
+width:20px;
+text-align:center;
+}
+.panel_edit{
+display:block;
+float:right;
+font-size:10px;
+}
+/* Milestones & Tasks */
+.pf_milestone_title.item_title strong,
+.pf_pcat{
+font-size:16px;
+font-weight:bold;
+line-height:18px;
+}
+.item_title{
+font-size:13px;
+font-weight:normal;
+line-height:14px;
+}
+.milestone_content{
+font-size:12px;
+margin:10px 0 0 32px;
+}
+.progress_100 .item_title{
+text-decoration:line-through;
+}
+.progress_100 td{
+filter:alpha(opacity=40);
+-moz-opacity:0.4;
+-khtml-opacity: 0.4;
+opacity: 0.4;
+-webkit-transition: opacity 1s linear;
+}
+.progress_100 :hover{
+cursor:default !important;
+}
+.progress_100 .pf_inline_menu ul:hover{
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+}
+.pf_assign_cell img{
+height:auto;
+width:20px;
+margin:0 auto;
+}
+.pf_priority_cell span{
+display:block;
+height:20px;
+width:20px;
+text-indent:-9999px;
+border:1px solid #DDD;
+margin:0 auto;
+}
+.pf_actions_cell{
+width:120px;
+}
+#pf-wrapper .pf_assign_cell{
+text-align:center !important;
+}
+/* Calendar */
+.pf_calendar{
+margin:5px;
+width:98%;
+}
+.pf-controlpanel .pf_calendar{
+margin:0 0 10px 0;
+width:100%;
+}
+.pf_legend{
+margin:10px;
+}
+#pf-wrapper .pf_nav_cal,
+#pf-wrapper .pf_daywrap{
+text-align:center;
+}
+.pf_addevent{
+outline:none;
+}
+.pf_addevent span{
+margin:0 auto;
+}
+.pf_addevent:active{
+position:relative;
+top:1px;
+}
+.pf_nav_cal{
+height:32px;
+line-height:32px;
+margin:10px 0 0 0;
+}
+#pf_panel_nav_section_subnav .pf_navigation.pf_nav_cal span {
+padding-left:0;
+}
+.pf_calendar .day,.pf_calendar .day_we{
+height:100px;
+}
+/* Calendar Date */
+#cdate_img,
+#cdate2_img,
+#sdate_img,
+#edate_img{
+position:relative;
+top:4px;
+}
+#pf-cpanel-right #cdate{
+margin:0 5px;
+}
+#pf_panel_cp_calendar th,
+#pf_panel_cp_calendar td{
+padding:2px 4px !important;
+}
+/* Footer */
+#pf-wrapper .list-footer .limit{
+text-align:center;
+}
+/* Version */
+#pf-footer #pf_panel_quicklink_version{
+font-size:11px;
+text-align:center;
+line-height:20px;
+margin:10px 0;
+}
+/* Time */
+#time_form_new{
+position:absolute;
+left:-2px;
+top:-52px;
+padding:10px;
+line-height:3;
+}
+#pf_time_panel_task,
+#pf_panel_time_tracking #cdate{
+width:30%;
+}
+/* Files */
+.pf_addressbar{
+clear:both;
+line-height:30px;
+height:30px;
+margin:10px 0;
+}
+.pf_addressbar a{
+margin:0 4px;
+}
+/* Inline Menu */
+.pf_inline_menu{
+display:block;
+float:right;
+margin:0 0 0 10px;
+}
+#pf-body .pf_inline_menu ul{
+margin:0;
+padding:0;
+list-style:0;
+height:24px;
+}
+#pf-body .pf_inline_menu li{
+display:inline;
+}
+.pf_table strong{
+float:left;
+line-height:24px;
+font-weight:normal;
+}
+.pf_inline_menu a:hover{
+text-decoration:none;
+}
+.pf_inline_menu{
+/*
+position:relative;
+*/
+clear:none;
+}
+/*
+.pf_inline_menu ul{
+visibility:hidden;
+position:absolute;
+padding:10px;
+z-index:999;
+width:28px;
+top:20px;
+left:1px;
+}
+.pf_task_title .pf_inline_menu ul{
+width:108px;
+}
+.pf_board_title .pf_inline_menu ul{
+width:80px;
+}
+.pf_milestone_title .pf_inline_menu ul{
+width:58px;
+left:20px;
+}
+.pf_table .item_title:hover .pf_inline_menu ul{
+visibility:visible;
+}
+*/
+
+.pf_inline_menu a{
+color:#777;
+padding:5px;
+display:block;
+float:left;
+outline:none;
+text-indent:-9999px;
+}
+.pf_inline_menu a span {
+display:block;
+height:16px;
+padding:0;
+width:16px;
+}
+/* Board */
+.pf_board_preview{
+float:left;
+clear:both;
+padding:10px;
+width:90%;
+margin:10px 0;
+}
+.pf_board_title{
+vertical-align:top;
+width:70%;
+}
+.pf_post_date{
+font-size:10px;
+float:left;
+line-height:24px;
+margin-left:5px;
+}
+.pf_replies{
+line-height:24px;
+margin:10px 0;
+clear:left;
+}
+.pf_author_cell img{
+width:50px;
+height:auto;
+}
+/* Comments */
+#pf-body .author div{
+text-align:center;
+}
+.pf_comments td{
+padding:10px;
+}
+.pf_comments td.title,
+.pf-board td.title{
+font-size:16px;
+}
+.pf-board .pf_title_header{
+width:50%;
+}
+.pf_comments .pf_button{
+margin:0 10px 0 0;
+}
+#pf_panel_task_comments input.inputbox{
+padding:4px 10px;
+width:50%;
+}
+#pf_panel_task_comments textarea.text{
+padding:10px;
+width:96%;
+}
+.pf_comments .pf_button img,.pf-board .pf_button img{
+position:relative;
+top:4px;
+}
+.pf_board{
+border-collapse:collapse;
+margin:10px 0;
+}
+#pf-wrapper .pf_board td{
+padding:10px;
+}
+#pf-wrapper .pf_board td td{
+padding:0px;
+}
+.pf_board .pf_button{
+margin:0 10px 10px 0;
+}
+.pf_board .save .pf_button{
+float:right;
+font-size:14px;
+}
+.pf_comments .author,.pf_board .author{
+line-height:2;
+}
+/* Config */
+.pf-config #pf-top .pf_navigation{
+margin-bottom:10px;
+}
+.pf-config #pf-top .pf_navigation input{
+margin:6px;
+}
+/* Extensions */
+/* Activity Stream */
+.pf-controlpanel #mystatus{
+width:50%;
+}
+#pf-body #pf_panel_cp_activitystream ul{
+margin:0;
+list-style:none;
+}
+#pf_panel_cp_activitystream ul li{
+padding:5px 0;
+line-height:1.2;
+margin:0 0 10px 0;
+}
+.activity_date{
+margin:5px 0;
+display:block;
+clear:left;
+}
+.team_activity{
+padding:5px 0;
+}
+.team_activity_list{
+padding:0;
+list-style:none;
+}
+.team_activity_list li{
+margin:0 0 5px 0;
+}
+.activity_avatar{
+width:110px;
+float:left;
+text-align:center !important;
+}
+.myactivity_link{
+text-align:center !important;
+line-height:22px;
+margin:2px 0 10px 0;
+}
+.activity_status{
+margin:0 15px 10px 15px;
+}
+.activity_status_inner{
+margin:0;
+min-width:200px;
+}
+.activity_info{
+padding:5px 0;
+}
+#pf_panel_cp_activitystream select{
+margin-bottom:10px;
+width:35%;
+}
+/* News */
+#pf-body .cp_news,
+#pf-body .cp_weblinks{
+margin:0 0 10px 0;
+list-style:none;
+}
+#pf-body .cp_news li,
+#pf-body .cp_weblinks li{
+margin:5px 0 0 0;
+padding:0 0 5px 0;
+}
+/* Joomla Tool Tip */
+.tool-tip{
+z-index:9999;
+}
+/* Joomla Login Form */
+#form-login{
+padding:10px;
+}
+/* Installer */
+.pf_install_file{
+float:left;
+}
+#pf-wrapper .pf_filter{
+text-align:right;
+}
+/* Section Config */
+.section_edit{
+outline:none;
+}
+.section_edit:hover{
+text-decoration:none;
+}
+/* Tabs */
+dl.tabs {
+float: left;
+margin: 10px 0 -1px 0 !important;
+z-index: 50;
+}
+dl.tabs dt {
+float: left;
+padding: 4px 10px;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-top: 1px solid #ccc;
+margin-left: 3px;
+background: url(../images/buttons.png) repeat-x;
+color: #666;
+-moz-border-radius:2px 2px 0 0;
+-webkit-border-top-left-radius:2px;
+-webkit-border-top-right-radius:2px;
+border-radius:2px 2px 0 0;
+}
+
+dl.tabs dt.open {
+background: url(../images/buttons.png) repeat-x 0 -21px;
+z-index: 100;
+color: #000;
+}
+
+#pf-wrapper div.current {
+clear: both;
+border: 1px solid #ccc;
+padding: 10px 10px;
+margin-bottom:10px;
+background-color:#F9F9F9;
+-moz-box-shadow:0px 0px 10px #DDD inset;
+-webkit-box-shadow:0px 0px 10px #DDD inset;
+box-shadow:0px 0px 10px #DDD inset;
+max-width:100%;
+}
+
+div.current dd {
+padding: 0;
+margin: 0;
+}
+/* Panel Positions */
+.debug_panel_pos{
+position:relative;
+}
+.debug_panel_pos span{
+padding:4px 10px;
+line-height:2;
+}
+.core-ext{
+font-size:10px;
+margin-left:5px;
+position:relative;
+top:4px;
+padding:2px 5px;
+}
+/* Override Webkit Stuff */
+#pf_panel_quicklink_project select{
+-webkit-border-radius:0;
+-webkit-appearance:textfield;
+-webkit-box-sizing: content-box;
+padding:2px 4px;
+}
+/* Editor buttons */
+#editor-xtd-buttons a{
+margin:0 5px 0 0 !important;
+}
+#editor-xtd-buttons div,
+.button2-left .blank{
+float:left;
+line-height:30px;
+}
+#editor-xtd-buttons {
+padding: 5px;
+margin-top:5px;
+}
+#pf-wrapper .button2-left{
+margin-left:0;
+}
+#pf-wrapper .button2-left a,#pf-wrapper .button2-right a,#pf-wrapper .button2-left span,#pf-wrapper .button2-right span {
+line-height:1;
+height:auto;
+}
+#pf-wrapper .button2-left,
+#pf-wrapper .button2-left .image,
+#pf-wrapper .button2-left .readmore,
+#pf-wrapper .button2-left .pagebreak,
+#pf-wrapper .button2-left div{
+background:none !important;
+}
+#editor-xtd-buttons div, .button2-left .blank {
+line-height:22px;
+}
+.button2-left a, .button2-right a, .button2-left span, .button2-right span {
+font-size: 11px;
+}
+/* TinyMCE */
+.mceLayout{
+width:auto !important;
+}
+#pf-body .admintable .mceLayout td{
+padding:0;
+}
+/* Columns */
+#pf-wrapper div.col {
+float:none;
+}
+.left,
+.right{
+float: none !important;
+width: auto !important;
+}

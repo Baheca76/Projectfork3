@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="section" version="3.0">
+
+    <name>projects</name>
+	<title>PROJECTS</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	
+	<files folder="data"></files>
+	
+	<params>
+	   <param type="slider_start" id="-basic" title="PFL_BASIC_SETTINGS" />
+	      <param name="allow_color" type="select" title="PFL_ALLOW_COLOR" desc="PFL_ALLOW_COLOR_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param name="allow_logo" type="select" title="PFL_ALLOW_LOGO" desc="PFL_ALLOW_LOGO_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="use_editor" title="PFL_USE_EDITOR" desc="PFL_USE_EDITOR_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="approve_new" title="PFL_PROJECT_APPROVAL" desc="PFL_PROJECT_APPROVAL_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="invite_select" title="PFL_SELECT_USER_INVITE" desc="PFL_SELECT_USER_INVITE_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	   <param type="slider_end"/>
+	   <param type="slider_start" id="-logo" title="PFL_LOGO_SETTINGS" />
+	      <param name="max_w" type="text" title="PFL_LOGO_MAX_W" value="120" size="10" desc="PFL_LOGO_MAX_W_DESC"/>
+	      <param name="max_h" type="text" title="PFL_LOGO_MAX_H" value="30" size="10" desc="PFL_LOGO_MAX_H_DESC"/>
+	      <param name="logo_save_path" type="text" title="PFL_LOGO_SAVE_PATH" size="30" value="/images/com_projectfork/projects/logos" desc="PFL_LOGO_SAVE_PATH_DESC"/>
+	   <param type="slider_end"/>
+	   <param type="slider_start" id="-copy" title="PFL_COPY_SETTINGS" />
+	      <param type="select" name="copy_tasks" title="PFL_COPY_TASKS" desc="PFL_COPY_TASKS_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="copy_milestones" title="PFL_COPY_MILESTONES" desc="PFL_COPY_MILESTONES_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="copy_groups" title="PFL_COPY_GROUPS" desc="PFL_COPY_GROUPS_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="copy_users" title="PFL_COPY_USERS" desc="PFL_COPY_USERS_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	   <param type="slider_end"/>
+	   <param type="slider_start" id="-cats" title="PFL_CAT_SETTINGS" />
+	      <param type="select" name="use_cats" title="PFL_USE_PCATS" desc="PFL_USE_PCATS_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="textarea" name="cats" title="PFL_PCATS" desc="PFL_PCATS_DESC" rows="10" cols="25"/>
+	   <param type="slider_end"/>
+	</params>
+	
+</install>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="process" version="3.0">
+    <name>demo</name>
+	<title>PFL_DEMO_PROCESS</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>system_startup</position>
+	<files>
+	   <file>demo.php</file>
+	</files>
+	<params>
+	   <param type="select" name="use_reset" title="PFL_DEMO_USE_RESET" desc="PFL_DEMO_USE_RESET_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="use_demo_sql" title="PFL_DEMO_LOAD_SQL" desc="PFL_DEMO_LOAD_SQL_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="text" name="demo_user" title="PFL_DEMO_USER_ID" desc="PFL_DEMO_USER_ID_DESC" size="5" value="63"/>
+	   <param type="text" name="reset_intervall" title="PFL_DEMO_RESET_INTERVALL" desc="PFL_DEMO_RESET_INTERVALL_DESC" size="5" value="1"/>
+	</params>
+</install>

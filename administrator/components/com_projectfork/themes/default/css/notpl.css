@@ -1,0 +1,36 @@
+/* Frontend No Template Only CSS */
+html{
+	font-size:100%;
+	height:100%;
+	margin:0 0 1px 0;
+}
+body {
+	font-size: 12px;
+}
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+#pf-frontend-notemplate{
+	padding: 0 5px;
+}
+#pf-main a,
+#pf-wrapper .pf_welcome a{
+	color:#0088CC;
+}
+#pf-main a:hover{
+	color:#135CAE;
+}
+
+body.contentpane,
+#all,
+#main{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#all{
+	max-width: 100% !important;
+}

@@ -1,0 +1,48 @@
+/* Backend Only CSS */
+div#element-box #pf-wrapper div.m {
+padding:0 8px;
+}
+#pf_panel_nav_section .pf_navigation{
+height:auto;
+border:0;
+}
+#pf_panel_nav_section .pf_navigation:hover{
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+}
+#pf-wrapper .pf_navigation #submenu-box li a {
+display:block;
+float:left;
+font-size:12px;
+line-height:12px;
+padding:0 15px;
+text-decoration:none;
+}
+#pf-wrapper .pf_navigation #submenu-box li a:hover{
+background:none;
+text-decoration:underline;
+}
+#pf-wrapper .pf_navigation #submenu-box li a:active span{
+top:0;
+}
+#pf_nav_config a span {
+display:inline;
+text-indent:0;
+width:auto;
+background:none;
+}
+.pf_navigation li#pf_nav_config a {
+border-left:0;
+border-right:1px solid #CCCCCC;
+width:auto;
+}
+.pf_navigation #submenu-box li a:hover {
+background:none !important;
+color:#0B55C4 !important;
+}
+.pf_navigation #submenu-box li.active_section a {
+background:none !important;
+color:#000 !important;
+text-decoration:underline !important;
+}

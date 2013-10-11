@@ -1,0 +1,2 @@
+/* LANGUAGES */
+INSERT INTO `#__pf_languages` VALUES(NULL, 'english', 'English', 1, 1, 'Tobias Kuhn', '', 'http://www.projectfork.net', '3000', 'GNU/General Public License', 'Copyright (C) 2006-2010 Tobias Kuhn', '2010', 0);

@@ -1,0 +1,64 @@
+.pf_setup_wrapper
+{
+    width:500px;
+    margin:0px auto;
+}
+.pf_setup_footer
+{
+    border-top:1px solid #999999;
+    padding-top:10px;
+    margin-top:20px;
+    font-size:10px;
+    color:#999999;
+}
+.pf_setup_footer a
+{
+    color:#999999;
+    text-decoration:underline;
+}
+ul.install_elements
+{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+ul.install_elements li
+{
+    display:block;
+    float:left;
+    width:166px;
+    height:16px;
+    padding-bottom:5px;
+    font-size:16px;
+}
+ul.install_elements li.el_failed
+{
+    color:red;
+}
+ul.install_elements li.el_pending
+{
+    color:#999999;
+}
+ul.install_elements li.el_ok
+{
+    color:#70AF2C;
+}
+ul.install_elements li.el_progress
+{
+    color:#B3D989;
+}
+.progress_bar_outer
+{
+    display:block;
+    width:494px;
+    height:30px;
+    border:1px solid #999999;
+    padding:2px;
+    background:#fff;
+}
+.progress_bar
+{
+    display:block;
+    height:30px;
+    background:#70AF2C;
+}

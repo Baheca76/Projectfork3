@@ -1,0 +1,514 @@
+/* ICONS */
+/* Main Nav*/
+#pf_nav_config a{
+width:20px;
+}
+#pf_nav_config a span{
+text-indent:-9999px;
+width:20px;
+display:block;
+}
+#pf_nav_config a span,
+.panel_edit, .section_edit{
+background:url(../images/options.png) no-repeat 50% 50% !important;
+}
+/* Return to site */
+.pf-return span{
+padding:2px 0 0 20px;
+background:url(../images/icons.png) no-repeat 0 -2595px;
+}
+/* Hide Text */
+.panel_edit{
+text-indent:-9999px;
+height: 20px;
+width:20px;
+margin: -2px -2px 0 0;
+}
+.section_edit span{
+text-indent:-9999px;
+height:20px;
+width:20px;
+display:inline-block;
+margin-left:5px;
+}
+.panel_edit,.section_edit{
+text-decoration:none !important;
+}
+.activity_delete{
+text-indent:-9999px;
+height:16px;
+width:16px;
+display:inline-block;
+}
+/* Activity Stream */
+#pf_panel_cp_activitystream ul li{
+padding-left:26px;
+}
+
+/* Inline Menus */
+/*
+.pf_inline_menu{
+background:#F8F8F7 url(../images/arrow_down.png) no-repeat 50% 50%;
+}
+.pf_inline_menu:hover{
+background:#EEE url(../images/arrow_down.png) no-repeat 50% 50%;
+}
+*/
+.pf_comments a span{
+background:url(../images/icons.png) no-repeat 0 -5111px;
+}
+.pf_complete a span{
+background:url(../images/icons.png) no-repeat 0 -2940px;
+}
+.pf_inline_menu .pf_complete a span{
+background:url(../images/icons.png) no-repeat 2px -2942px;
+}
+.pf_edit a span{
+background:url(../images/icons.png) no-repeat 0 -4757px;
+}
+.pf_inline_menu .pf_edit a span{
+background:url(../images/icons.png) no-repeat 2px -4757px;
+}
+.pf_tasks a span{
+background:url(../images/icons.png) no-repeat 2px -2425px;
+}
+.pf_timeadd a span{
+background:url(../images/icons.png) no-repeat 0 -269px;
+}
+.pf_website a span{
+background:url(../images/icons.png) no-repeat 0 -1625px;
+}
+/* Hover */
+/*
+.pf_comments a:hover span{
+background:url(../images/icons/color/16/comments.png) no-repeat 0 0;
+}
+.pf_complete a:hover span{
+background:url(../images/icons/color/16/action_check.png) no-repeat 0 0;
+}
+.pf_edit a:hover span{
+background:url(../images/icons/color/16/reply.png) no-repeat 0 0;
+}
+.pf_tasks a:hover span{
+background:url(../images/icons/color/16/arrow_next.png) no-repeat 0 0;
+}
+.pf_timeadd a:hover span{
+background:url(../images/icons/color/16/time.png) no-repeat 0 0;
+}
+.pf_website a:hover span{
+background:url(../images/icons/color/16/globe.png) no-repeat 0 0;
+}
+*/
+/*
+/* Toolbar */
+#pf_panel_nav_section_subnav .pf_navigation span,
+.pf_fm_file span,.pf_fm_doc span,.pf_fm_folder span{
+padding-left:20px;
+padding-top:2px;
+}
+.pf-config #pf_panel_nav_section_subnav .pf_navigation span {
+padding-left:2px;
+padding-right:4px;
+}
+.pf-config #pf_panel_nav_section_subnav .pf_navigation .pf_save span,
+.pf-config #pf_panel_nav_section_subnav .pf_navigation .pf_accept span,
+.pf-config #pf_panel_nav_section_subnav .pf_navigation .pf_apply span,
+.pf-config #pf_panel_nav_section_subnav .pf_navigation .pf_cancel span,
+.pf-config #pf_panel_nav_section_subnav .pf_navigation .pf_order span,
+.pf-config #pf_panel_nav_section_subnav .pf_navigation .pf_install span,
+.pf-config #pf_panel_nav_section_subnav .pf_navigation .pf_uninstall span {
+padding-left:20px;
+padding-right:0;
+}
+.pf_fm_file span{
+padding-bottom:2px;
+}
+/* Save */
+.pf_save a span{
+background:url(../images/icons.png) no-repeat 0 -540px;
+}
+.pf_apply a span,
+.pf_accept a span,
+.pf_approve a span{
+background:url(../images/icons.png) no-repeat 0 -2940px;
+}
+.pf_cancel a span,
+.pf_deny a span,
+.pf_uninstall a span,
+.pf_delete a span,
+.activity_delete{
+background:url(../images/icons.png) no-repeat 0 -5718px;
+}
+.pf_new a span,
+.pf_add a span,
+.pf_new_project a span,
+.pf_install a span,
+.pf_addevent span{
+background:url(../images/icons.png) no-repeat 0 -3026px;
+}
+.pf_inline_menu .pf_new span{
+background:url(../images/icons.png) no-repeat 2px -3028px;
+}
+.pf_copy a span{
+background:url(../images/icons.png) no-repeat 0 -4574px;
+}
+.pf_archive a span{
+background:url(../images/icons.png) no-repeat 0 -5546px;
+}
+.pf_config a span{
+background:url(../images/icons.png) no-repeat 0 -3572px;
+}
+.pf_order a span{
+background:url(../images/icons.png) no-repeat 0 -4666px;
+}
+.pf_move a span{
+background:url(../images/icons.png) no-repeat 0 -5459px;
+}
+.pf_new_folder a span{
+background:url(../images/icons.png) no-repeat 0 -1713px;
+}
+.pf_fm_folder span{
+background:url(../images/icons.png) no-repeat 0 -5980px;
+}
+.pf_new_file a span{
+background:url(../images/icons.png) no-repeat 0 -3026px;
+}
+.pf_fm_file span{
+background:url(../images/icons.png) no-repeat 0 -6508px;
+}
+.pf_new_note a span{
+background:url(../images/icons.png) no-repeat 0 -1888px;
+}
+.pf_fm_doc span{
+background:url(../images/icons.png) no-repeat 0 -6783px;
+}
+.pf_month a span{
+background:url(../images/icons.png) no-repeat 0 -2246px;
+}
+.pf_week a span{
+background:url(../images/icons.png) no-repeat 0 -2246px;
+}
+.pf_day a span{
+background:url(../images/icons.png) no-repeat 0 -2246px;
+}
+.pf_back a span{
+background:url(../images/icons.png) no-repeat 0 -5632px;
+}
+.pf_import a span{
+background:url(../images/icons.png) no-repeat 0 -4124px;
+}
+.pf_access a span{
+background:url(../images/icons.png) no-repeat 0 -3664px;
+}
+.pf_join a span{
+background:url(../images/icons.png) no-repeat 0 -4664px;
+}
+.pf_subscribe a span{
+background:url(../images/icons.png) no-repeat 0 -5892px;
+}
+.pf_unsubscribe a span{
+background:url(../images/icons.png) no-repeat 0 -3757px;
+}
+.pf_show a span{
+background:url(../images/icons.png) no-repeat 2px -4932px;
+}
+.pf_groups a span{
+background:url(../images/icons.png) no-repeat 0 -3846px;
+}
+.pf_reply a span{
+background:url(../images/icons.png) no-repeat 0 -5108px;
+}
+.pf_print a span{
+background:url(../images/icons.png) no-repeat 0 -3480px;
+}
+.pf_new_user a span{
+background:url(../images/icons.png) no-repeat 0 -178px;
+}
+.pf_new_event a span{
+background:url(../images/icons.png) no-repeat 0 -2682px;
+}
+.pf_new_task a span{
+background:url(../images/icons.png) no-repeat 0 -2938px;
+}
+.pf_new_milestone a span{
+background:url(../images/icons.png) no-repeat 0 -360px;
+}
+.pf_new_topic a span{
+background:url(../images/icons.png) no-repeat 0 -2156px;
+}
+/* Hover */
+/*
+.pf_save a:hover span{
+background:url(../images/icons/color/16/save.png) no-repeat 0 50%;
+}
+.pf_apply a:hover span,
+.pf_accept a:hover span,
+.pf_approve a:hover span,
+.pf_new_task a:hover span{
+background:url(../images/icons/color/16/action_check.png) no-repeat 0 50%;
+}
+.pf_cancel a:hover span,
+.pf_deny a:hover span,
+.activity_delete{
+background:url(../images/icons/color/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_new a:hover span,
+.pf_add a:hover span,
+.pf_new_project a:hover span,
+.pf_install a:hover span{
+background:url(../images/icons/color/16/action_add.png) no-repeat 0 50%;
+}
+.pf_copy a:hover span,
+.pf_uninstall a:hover span{
+background:url(../images/icons/color/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_archive a:hover span{
+background:url(../images/icons/color/16/arrow_down.png) no-repeat 0 50%;
+}
+.pf_delete a:hover span{
+background:url(../images/icons/color/16/action_delete.png) no-repeat 0 50%;
+}
+.pf_config a:hover span{
+background:url(../images/icons/color/16/options.png) no-repeat 0 50%;
+}
+.pf_order a:hover span{
+background:url(../images/icons/color/16/download.png) no-repeat 0 50%;
+}
+.pf_move a:hover span{
+background:url(../images/icons/color/16/arrow_next.png) no-repeat 0 50%;
+}
+.pf_new_folder a:hover span{
+background:url(../images/icons/color/16/folder.png) no-repeat 0 50%;
+}
+.pf_new_file a:hover span{
+background:url(../images/icons/color/16/file.png) no-repeat 0 50%;
+}
+.pf_new_note a:hover span{
+background:url(../images/icons/color/16/application.png) no-repeat 0 50%;
+}
+.pf_month a:hover span,
+.pf_new_event a:hover span{
+background:url(../images/icons/color/16/calendar.png) no-repeat 0 50%;
+}
+.pf_week a:hover span{
+background:url(../images/icons/color/16/calendar.png) no-repeat 0 50%;
+}
+.pf_day a:hover span{
+background:url(../images/icons/color/16/calendar.png) no-repeat 0 50%;
+}
+.pf_back a:hover span{
+background:url(../images/icons/color/16/arrow_back.png) no-repeat 0 50%;
+}
+.pf_import a:hover span,
+.pf_new_user a:hover span{
+background:url(../images/icons/color/16/user.png) no-repeat 0 50%;
+}
+.pf_access a:hover span{
+background:url(../images/icons/color/16/login.png) no-repeat 0 50%;
+}
+.pf_join a:hover span{
+background:url(../images/icons/color/16/arrow_down.png) no-repeat 0 50%;
+}
+.pf_subscribe a:hover span{
+background:url(../images/icons/color/16/letter.png) no-repeat 0 50%;
+}
+.pf_unsubscribe a:hover span{
+background:url(../images/icons/color/16/action_remove.png) no-repeat 0 50%;
+}
+.pf_show a:hover span{
+background:url(../images/icons/color/16/maximize.png) no-repeat 0 50%;
+}
+.pf_groups a:hover span{
+background:url(../images/icons/color/16/group.png) no-repeat 0 50%;
+}
+.pf_reply a:hover span{
+background:url(../images/icons/color/16/arrow_back.png) no-repeat 0 50%;
+}
+.pf_print a:hover span{
+background:url(../images/icons/color/16/print.png) no-repeat 0 50%;
+}
+.pf_new_milestone a:hover span{
+background:url(../images/icons/color/16/star.png) no-repeat 0 50%;
+}
+.pf_new_topic a:hover span{
+background:url(../images/icons/color/16/comments.png) no-repeat 0 50%;
+}
+*/
+/* Doc Type Icons */
+.ai span,
+.eps span,
+.svg span{
+background:url(../images/icons.png) no-repeat 0 -6690px;
+}
+.css span{
+background:url(../images/icons.png) no-repeat 0 -9253px;
+}
+.doc span{
+background:url(../images/icons.png) no-repeat 0 -9161px;
+}
+.exe span{
+background:url(../images/icons.png) no-repeat 0 -7055px;
+}
+.fla span{
+background:url(../images/icons.png) no-repeat 0 -8610px;
+}
+.gif span,
+.jpg span,
+.jpeg span,
+#pf-wrapper .png span{
+background:url(../images/icons.png) no-repeat 0 -8335px;
+}
+.tml span{
+background:url(../images/icons.png) no-repeat 0 -7786px;
+}
+.odt span{
+background:url(../images/icons.png) no-repeat 0 -6508px;
+}
+.mov span{
+background:url(../images/icons.png) no-repeat 0 -9800px;
+}
+.pdf span{
+background:url(../images/icons.png) no-repeat 0 -7695px;
+}
+.ppt span{
+background:url(../images/icons.png) no-repeat 0 -9710px;
+}
+.psd span{
+background:url(../images/icons.png) no-repeat 0 -7604px;
+}
+.rtf span{
+background:url(../images/icons.png) no-repeat 0 -8518px;
+}
+.sql span{
+background:url(../images/icons.png) no-repeat 0 -6864px;
+}
+.txt span{
+background:url(../images/icons.png) no-repeat 0 -6781px;
+}
+.xls span,
+.csv span{
+background:url(../images/icons.png) no-repeat 0 -6416px;
+}
+.zip span{
+background:url(../images/icons.png) no-repeat 0 -6234px;
+}
+/* Calendar */
+.pf_addevent span{
+display:block;
+height:16px;
+width:16px;
+text-indent:-9999px;
+}
+
+/* Status */
+.activity_status{
+background:url(../images/quote_open.png) no-repeat 5px 10px;
+}
+.activity_status_inner{
+background:url(../images/quote_close.png) no-repeat 100% 100%;
+}
+/* Activity Stream */
+.tasks_task_update_progress,.tasks_task_save_task,.tasks_task_delete,.tasks_task_update_task,.tasks_task_save_comment,
+.tasks_task_reorder {
+background:url(../images/icons.png) no-repeat 0 -2940px;
+}
+.profile_milestone_update,.tasks_milestone_update_progress,.tasks_task_save_milestone,.tasks_task_update_milestone {
+background:url(../images/icons.png) no-repeat 0 -360px;
+}
+.time_task_update,.time_task_save,.time_task_delete {
+background:url(../images/icons.png) no-repeat 0 -264px;
+}
+.projects_task_update,.projects_task_save,.projects_task_delete {
+background:url(../images/icons.png) no-repeat 0 -2682px;
+}
+.calendar_task_update,.calendar_task_save,.calendar_task_delete {
+background:url(../images/icons.png) no-repeat 0 -2682px;
+}
+.controlpanel_setactivity{
+background:url(../images/icons.png) no-repeat 0 -178px;
+}
+.filemanager_task_update_file,.filemanager_task_save_file,.filemanager_task_delete_file,
+.filemanager_pro_task_update_file,.filemanager_pro_task_save_file,.filemanager_pro_task_delete_file {
+background:url(../images/icons.png) no-repeat 0 -540px;
+}
+.filemanager_task_update_folder,.filemanager_task_save_folder,.filemanager_task_delete_folder,
+.filemanager_pro_task_update_folder,.filemanager_pro_task_save_folder,.filemanager_pro_task_delete_folder {
+background:url(../images/icons.png) no-repeat 0 -1713px;
+}
+.filemanager_task_update_note,.filemanager_task_save_note,.filemanager_task_delete_note,
+.filemanager_pro_task_update_note,.filemanager_pro_task_save_note,.filemanager_pro_task_delete_note {
+background:url(../images/icons.png) no-repeat 0 -1887px;
+}
+.board_task_update_topic,.board_task_save_topic,.board_task_delete_topic,.board_task_save_reply,.board_task_subscribe,.board_task_unsubscribe {
+background:url(../images/icons.png) no-repeat 0 -5108px;
+}
+.profile_task_update {
+background:url(../images/icons.png) no-repeat 0 -9984px;
+}
+.users_task_update,.users_task_save,.users_task_delete {
+background:url(../images/icons.png) no-repeat 0 -178px;
+}
+.groups_task_update,.groups_task_save,.groups_task_delete {
+background:url(../images/icons.png) no-repeat 0 -1529px;
+}
+.time_task_delete,.projects_task_delete,.tasks_task_delete,
+.calendar_task_delete,.groups_task_delete,.users_task_delete,
+.board_task_unsubscribe,.filemanager_task_delete_note,.filemanager_task_delete_file,.filemanager_task_delete_folder{
+text-decoration:line-through;
+color:#888 !important;
+}
+
+/* FM Pro */
+.pf_tree .pf_fm_folder span{
+background:url(../images/icons.png) no-repeat 0 -1713px;
+}
+.pf_tree .active_tree .pf_fm_folder span{
+background:url(../images/icons.png) no-repeat 0 -1800px;
+}
+
+/* Milestones */
+.pf_table tr.milestone td.item_title strong,
+.pf_table tr.priority_5 td.pf_milestone_title strong,
+.pf_table tr.priority_4 td.pf_milestone_title strong,
+.pf_table tr.priority_3 td.pf_milestone_title strong,
+.pf_table tr.priority_2 td.pf_milestone_title strong,
+.pf_table tr.priority_1 td.pf_milestone_title strong{
+padding-left:30px;
+}
+.pf_table tr.milestone td.item_title strong{
+background:url(../images/flags.png) no-repeat 0 -1100px;
+}
+.pf_table tr.priority_5 td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -100px;
+}
+.pf_table tr.priority_4 td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -300px;
+}
+.pf_table tr.priority_3 td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -500px;
+}
+.pf_table tr.priority_2 td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -700px;
+}
+.pf_table tr.priority_1 td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -900px;
+}
+
+.pf_table tr.milestone:hover td.item_title strong{
+background:url(../images/flags.png) no-repeat 0 -1000px;
+}
+.pf_table tr.priority_5:hover td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 0;
+}
+.pf_table tr.priority_4:hover td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -200px;
+}
+.pf_table tr.priority_3:hover td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -400px;
+}
+.pf_table tr.priority_2:hover td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -600px;
+}
+.pf_table tr.priority_1:hover td.pf_milestone_title strong{
+background:url(../images/flags.png) no-repeat 0 -800px;
+}

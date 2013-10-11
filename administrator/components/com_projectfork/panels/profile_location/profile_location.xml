@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+	<name>profile_location</name>
+    <title>PFL_PROFILE_LOCATION</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<update_website></update_website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>profile_details_right</position>
+	<files>
+	   <file>profile_location.php</file>
+	</files>
+</install>

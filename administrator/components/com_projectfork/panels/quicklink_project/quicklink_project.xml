@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+    <name>system_project</name>
+	<title>PFL_SYSTEM_PROJECT</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>theme_sidebar</position>
+	<files>
+	   <file>system_project.php</file>
+	</files>
+</install>

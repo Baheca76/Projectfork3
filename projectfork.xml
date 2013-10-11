@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Projectfork</name>
+	<creationDate>2013/05</creationDate>
+	<author>Tobias Kuhn</author>
+	<authorEmail>support@projectfork.net</authorEmail>
+	<authorUrl>http://www.projectfork.net</authorUrl>
+	<copyright>Copyright 2006-2013 Tobias Kuhn</copyright>
+	<license>GNU/General Public License</license>
+	<version>3.0.11 Stable</version>
+	<description></description>
+	<installfile></installfile>
+	<uninstallfile></uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">_install/mysql/_install.mysql.utf8.sql</file>
+			<file driver="mysql">_install/mysql/_install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">_install/mysql/_uninstall.mysql.utf8.sql</file>
+			<file driver="mysql">_install/mysql/_uninstall.mysql.nonutf8.sql</file>
+		</sql>
+	</uninstall>
+	<files>
+		<filename>index.html</filename>
+		<filename>projectfork.php</filename>
+		<filename>router.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/projectfork/index.html</filename>
+		<filename>views/projectfork/tmpl/index.html</filename>
+		<filename>views/projectfork/tmpl/default.xml</filename>
+	</files>
+	<administration>
+		<menu img="components/com_projectfork/_core/images/16_projectfork.png">Projectfork</menu>
+		<files folder="administrator/components/com_projectfork/">
+		    <folder>_core</folder>
+		    <folder>_dev</folder>
+		    <folder>_install</folder>
+		    <folder>languages</folder>
+		    <folder>mods</folder>
+		    <folder>panels</folder>
+		    <folder>processes</folder>
+		    <folder>sections</folder>
+		    <folder>themes</folder>
+			<filename>admin.projectfork.php</filename>
+            <filename>index.html</filename>
+            <filename>LICENSE.php</filename>
+            <filename>version.php</filename>
+		</files>
+	</administration>
+</install>

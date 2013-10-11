@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="process" version="3.0">
+    <name>projects_mailer</name>
+	<title>PFL_PROJECTS_MAILER</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>system_startup</position>
+	<files>
+	   <file>projects_mailer.php</file>
+	</files>
+</install>

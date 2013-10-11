@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="theme" version="3.0">
+    <name>default</name>
+	<title>Default Theme</title>
+	<author>Kyle Ledbetter</author>
+	<website>http://www.projectfork.net</website>
+	<version>3.0.8</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2011 Pixel Praise LLC</copyright>
+	<date>6/29/2011</date>
+	<files folder="data"></files>
+</install>

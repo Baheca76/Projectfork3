@@ -1,0 +1,70 @@
+UPDATE `#__pf_mods` SET `enabled` = '0';
+
+DELETE FROM `#__pf_languages`;
+DELETE FROM `#__pf_themes`;
+
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_section';
+DELETE FROM `#__pf_panels` WHERE `name` = 'system_console';
+DELETE FROM `#__pf_panels` WHERE `name` = 'system_messages';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_config';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_calendar';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_filemanager';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_groups';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_profile';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_projects';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_tasks';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_users';
+DELETE FROM `#__pf_panels` WHERE `name` = 'theme_logo';
+DELETE FROM `#__pf_panels` WHERE `name` = 'quicklink_project';
+DELETE FROM `#__pf_panels` WHERE `name` = 'cp_project';
+DELETE FROM `#__pf_panels` WHERE `name` = 'cp_welcome';
+DELETE FROM `#__pf_panels` WHERE `name` = 'cp_news';
+DELETE FROM `#__pf_panels` WHERE `name` = 'cp_events';
+DELETE FROM `#__pf_panels` WHERE `name` = 'cp_tasks';
+DELETE FROM `#__pf_panels` WHERE `name` = 'project_desc';
+DELETE FROM `#__pf_panels` WHERE `name` = 'project_logo';
+DELETE FROM `#__pf_panels` WHERE `name` = 'project_details';
+DELETE FROM `#__pf_panels` WHERE `name` = 'task_comments';
+DELETE FROM `#__pf_panels` WHERE `name` = 'task_content';
+DELETE FROM `#__pf_panels` WHERE `name` = 'task_details';
+DELETE FROM `#__pf_panels` WHERE `name` = 'task_attachments';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_board';
+DELETE FROM `#__pf_panels` WHERE `name` = 'project_tasks';
+DELETE FROM `#__pf_panels` WHERE `name` = 'project_join';
+DELETE FROM `#__pf_panels` WHERE `name` = 'system_dyk';
+DELETE FROM `#__pf_panels` WHERE `name` = 'profile_user';
+DELETE FROM `#__pf_panels` WHERE `name` = 'profile_contact';
+DELETE FROM `#__pf_panels` WHERE `name` = 'profile_location';
+DELETE FROM `#__pf_panels` WHERE `name` = 'note_details';
+DELETE FROM `#__pf_panels` WHERE `name` = 'note_comments';
+DELETE FROM `#__pf_panels` WHERE `name` = 'note_info';
+DELETE FROM `#__pf_panels` WHERE `name` = 'quicklink_version';
+DELETE FROM `#__pf_panels` WHERE `name` = 'time_tracking';
+DELETE FROM `#__pf_panels` WHERE `name` = 'profile_networks';
+DELETE FROM `#__pf_panels` WHERE `name` = 'nav_time';
+DELETE FROM `#__pf_panels` WHERE `name` = 'cp_weblinks';
+UPDATE `#__pf_panels` SET `enabled` = '0';
+
+DELETE FROM `#__pf_processes` WHERE name = 'project_color';
+DELETE FROM `#__pf_processes` WHERE name = 'comments';
+DELETE FROM `#__pf_processes` WHERE name = 'demo';
+DELETE FROM `#__pf_processes` WHERE name = 'tasks_mailer';
+DELETE FROM `#__pf_processes` WHERE name = 'projects_mailer';
+DELETE FROM `#__pf_processes` WHERE name = 'avatar';
+UPDATE `#__pf_processes` SET `enabled` = '0';
+
+DELETE FROM `#__pf_sections` WHERE name = 'controlpanel';
+DELETE FROM `#__pf_sections` WHERE name = 'projects';
+DELETE FROM `#__pf_sections` WHERE name = 'tasks';
+DELETE FROM `#__pf_sections` WHERE name = 'filemanager';
+DELETE FROM `#__pf_sections` WHERE name = 'calendar';
+DELETE FROM `#__pf_sections` WHERE name = 'profile';
+DELETE FROM `#__pf_sections` WHERE name = 'groups';
+DELETE FROM `#__pf_sections` WHERE name = 'users';
+DELETE FROM `#__pf_sections` WHERE name = 'config';
+DELETE FROM `#__pf_sections` WHERE name = 'board';
+DELETE FROM `#__pf_sections` WHERE name = 'time';
+UPDATE `#__pf_sections` SET `enabled` = '0';
+
+INSERT INTO `#__pf_section_tasks` VALUES
+(NULL, 'config', 'task_update_mod', '', '', 0, '', '', 'form_edit_mod', 0);

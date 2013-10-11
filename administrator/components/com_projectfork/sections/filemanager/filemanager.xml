@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="section" version="3.0">
+
+    <name>filemanager</name>
+	<title>PFL_FILEMANAGER</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	
+	<files folder="data"></files>
+	
+	<params>
+	   <param type="text" name="upload_path" title="PFL_UPLOAD_PATH" value="/images/com_projectfork/filemanager"/>
+	   <param type="select" name="use_editor" title="PFL_USE_EDITOR" desc="PFL_USE_EDITOR_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="attach_folders" title="PFL_ATTACH_FOLDERS" desc="PFL_ATTACH_FOLDERS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="attach_files" title="PFL_ATTACH_FILES" desc="PFL_ATTACH_FILES_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="attach_notes" title="PFL_ATTACH_NOTES" desc="PFL_ATTACH_NOTES_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	</params>
+	
+</install>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+   <name>cp_news</name>
+	<title>PFL_CP_NEWS</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>controlpanel_right</position>
+	<files>
+	   <file>cp_news.php</file>
+	</files>
+	<params>
+	   <param type="text" name="feed_url" title="PFL_FEED_URL" value="http://feeds.feedburner.com/joomlapraise"/>
+	   <param type="text" name="total" title="PFL_TOTAL_ITEMS" value="4"/>
+	   <param type="select" name="read_more" title="PFL_SHOW_READMORE">
+	      <option value="0">PFL_NO</option>
+	      <option value="1">PFL_YES</option>
+	   </param>
+	</params>
+</install>

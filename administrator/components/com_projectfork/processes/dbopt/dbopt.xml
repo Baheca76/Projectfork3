@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="process" version="3.0">
+    <name>dbopt</name>
+	<title>DBOPT_PROCESS</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<languages>
+	    <language name="english">data/english.ini</language>
+	</languages>
+	<event>system_startup</event>
+	<score>0</score>
+	<flag></flag>
+	<files folder="data"></files>
+	<params>
+	   <param type="text" name="interval" value="7" default="7" title="DBOPT_INTERVAL" desc="DBOPT_INTERVAL_DESC" size="10"/>
+	</params>
+</install>

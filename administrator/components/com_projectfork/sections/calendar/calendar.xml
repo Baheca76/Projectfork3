@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="section" version="3.0">
+
+    <name>calendar</name>
+	<title>CALENDAR</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	
+	<files folder="data"></files>
+	
+	<params>
+	   <param type="select" name="use_editor" title="PFL_USE_EDITOR" desc="PFL_USE_EDITOR_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="display_projects" title="PFL_DISPLAY_PROJECTS" desc="PFL_DISPLAY_PROJECTS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="display_milestones" title="PFL_DISPLAY_MILESTONES" desc="PFL_DISPLAY_MILESTONES_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="select" name="display_tasks" title="PFL_DISPLAY_TASKS" desc="PFL_DISPLAY_TASKS_DESC">
+	      <option value="1">PFL_YES</option>
+	      <option value="0">PFL_NO</option>
+	   </param>
+	   <param type="text" name="project_bg" title="PFL_PROJECT_BG" desc="PFL_PROJECT_BG_DESC" size="15" value="D2E0FF"/>
+	   <param type="text" name="milestone_bg" title="PFL_MILESTONE_BG" desc="PFL_MILESTONE_BG_DESC" size="15" value="FFFD6F"/>
+	   <param type="text" name="task_bg" title="PFL_TASK_BG" desc="PFL_TASK_BG_DESC" size="15" value="A3FF91"/>
+	</params>
+	
+</install>

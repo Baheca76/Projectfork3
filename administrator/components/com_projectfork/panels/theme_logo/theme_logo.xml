@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="panel" version="3.0">
+	<name>theme_logo</name>
+    <title>PFL_LOGO</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	<position>theme_sidebar</position>
+	<files>
+	   <file>theme_logo.php</file>
+	</files>
+	<params>
+	   <param type="text" value="logo.png" title="PFL_DEFAULT_LOGO" name="default_logo"/>
+	</params>
+</install>

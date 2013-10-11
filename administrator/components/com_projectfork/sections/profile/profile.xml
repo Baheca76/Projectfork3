@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="section" version="3.0">
+
+    <name>profile</name>
+	<title>PROFILE</title>
+	<author>Tobias Kuhn</author>
+	<website>http://www.projectfork.net</website>
+	<version>3000</version>
+	<license>GNU/General Public License</license>
+	<copyright>Copyright 2006-2010 Tobias Kuhn</copyright>
+	<date>2010</date>
+	
+	<files folder="data"></files>
+	
+	<params>
+	   <param type="slider_start" title="PFL_CONTACT_SETTINGS" id="-contact"/>
+	      <param type="select" name="allow_phone" title="PFL_ALLOW_PHONE" desc="PFL_ALLOW_PHONE_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_mphone" title="PFL_ALLOW_MPHONE" desc="PFL_ALLOW_MPHONE_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_skype" title="PFL_ALLOW_SKYPE" desc="PFL_ALLOW_SKYPE_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_msn" title="PFL_ALLOW_MSN" desc="PFL_ALLOW_MSN_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_icq" title="PFL_ALLOW_ICQ" desc="PFL_ALLOW_ICQ_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	   <param type="slider_end"/>
+	   <param type="slider_start" title="PFL_LOCATION_SETTINGS" id="-location"/>
+	      <param type="select" name="allow_street" title="PFL_ALLOW_STREET" desc="PFL_ALLOW_STREET_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_city" title="PFL_ALLOW_CITY" desc="PFL_ALLOW_CITY_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_zip" title="PFL_ALLOW_ZIP" desc="PFL_ALLOW_ZIP_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	   <param type="slider_end"/>
+	   <param type="slider_start" title="PFL_AVATAR_SETTINGS" id="-avatar"/>
+	      <param type="select" name="allow_upload" title="PFL_ALLOW_UPLOAD" desc="PFL_ALLOW_UPLOAD_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="text" name="upload_path" title="PFL_UPLOAD_PATH" desc="PFL_UPLOAD_PATH_DESC" size="40"/>
+	      <param type="text" name="max_w" title="PFL_AVATAR_MAX_WIDTH" desc="PFL_AVATAR_MAX_WIDTH_DESC" size="5"/>
+	      <param type="text" name="max_h" title="PFL_AVATAR_MAX_HEIGHT" desc="PFL_AVATAR_MAX_HEIGHT_DESC" size="5"/>
+	   <param type="slider_end"/>
+	   <param type="slider_start" title="PFL_NETWORK_SETTINGS" id="-network"/>
+	      <param type="select" name="allow_twitter" title="PFL_ALLOW_TWITTER" desc="PFL_ALLOW_TWITTER_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_friendfeed" title="PFL_ALLOW_FRIENDFEED" desc="PFL_ALLOW_FRIENDFEED_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_linkedin" title="PFL_ALLOW_LINKEDIN" desc="PFL_ALLOW_LINKEDIN_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_facebook" title="PFL_ALLOW_FACEBOOK" desc="PFL_ALLOW_FACEBOOK_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_youtube" title="PFL_ALLOW_YOUTUBE" desc="PFL_ALLOW_YOUTUBE_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+	      <param type="select" name="allow_vimeo" title="PFL_ALLOW_VIMEO" desc="PFL_ALLOW_VIMEO_DESC">
+	         <option value="1">PFL_YES</option>
+	         <option value="0">PFL_NO</option>
+	      </param>
+      <param type="slider_end"/>
+	</params>
+	
+</install>
