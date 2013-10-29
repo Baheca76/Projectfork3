@@ -395,6 +395,14 @@ class PFfilemanagerClass extends PFobject
 		$ids     = array();
 		$i       = 0;
 
+		$allowed = $config->Get('allowed_exts', 'filemanager');
+		
+		if ($allowed) {
+			$exts = explode(",",$allowed);
+		}
+		else {
+			$exts = array();
+		}
 		while ($count > $i)
 		{
 			$file             = array();
@@ -413,6 +421,7 @@ class PFfilemanagerClass extends PFobject
 				$filepath = JPath::clean(JPATH_ROOT.DS.$config->Get('upload_path', 'filemanager').DS.$prefix1);
 				$size     = $file['size'] / 1024;
 				$name     = $file['name'];
+				$file['ext']		= end(explode(".",$file['name']));
 
 				// Create the upload path if it does not exist
 				if(!JFolder::exists($filepath)) {
@@ -423,33 +432,41 @@ class PFfilemanagerClass extends PFobject
 				}
 
 				// Upload the file
-				if (!JFile::upload($file['tmp_name'], $filepath.DS.$prefix2.strtolower($file['name']))) {
+				if (in_array($file['ext'], $exts)){
+					if (!JFile::upload($file['tmp_name'], $filepath.DS.$prefix2.strtolower($file['name']))) {
+						$i++;
+						$e = true;
+						$this->AddError('MSG_FILE_E_UPLOAD');
+						continue;
+					}
+
+					// Chmod upload folder
+					JPath::setPermissions($filepath, '0644', '0755');
+
+					$query = "INSERT INTO #__pf_files VALUES(NULL, ".$db->quote($name).", '".$prefix2."', ".$db->quote($desc).", ".$db->quote($user->GetId()).","
+						   . "\n ".$db->quote($project).", ".$db->quote($dir).", ".$db->quote($size).", ".$db->quote($now).", ".$db->quote($now).")";
+						   $db->setQuery($query);
+						   $db->query();
+
+					$id = $db->insertid();
+
+					if(!$id) {
+						$i++;
+						$e = true;
+						$this->AddError($db->getErrorMsg());
+						continue;
+					}
+
+					// Save task connections
+					if((int) $config->Get('attach_files', 'filemanager')) $this->SaveAttachments($id, 'file', $tasks);
+					if($id) $ids[] = $id;
+				}
+				else {
 					$i++;
 					$e = true;
 					$this->AddError('MSG_FILE_E_UPLOAD');
 					continue;
 				}
-
-				// Chmod upload folder
-			    JPath::setPermissions($filepath, '0644', '0755');
-
-				$query = "INSERT INTO #__pf_files VALUES(NULL, ".$db->quote($name).", '".$prefix2."', ".$db->quote($desc).", ".$db->quote($user->GetId()).","
-				       . "\n ".$db->quote($project).", ".$db->quote($dir).", ".$db->quote($size).", ".$db->quote($now).", ".$db->quote($now).")";
-				       $db->setQuery($query);
-				       $db->query();
-
-				$id = $db->insertid();
-
-				if(!$id) {
-					$i++;
-					$e = true;
-					$this->AddError($db->getErrorMsg());
-					continue;
-				}
-
-				// Save task connections
-		        if((int) $config->Get('attach_files', 'filemanager')) $this->SaveAttachments($id, 'file', $tasks);
-                if($id) $ids[] = $id;
 			}
 			$i++;
 		}
@@ -540,14 +557,23 @@ class PFfilemanagerClass extends PFobject
 		$config = PFconfig::GetInstance();
 		$db     = PFdatabase::GetInstance();
 
+		$allowed = $config->Get('allowed_exts', 'filemanager');
+		
+		if ($allowed) {
+			$exts = explode(",",$allowed);
+		}
+		else {
+			$exts = array();
+		}
 		$file['name'] = JFile::makeSafe($file['name']);
+		$file['ext']  = end(explode(".",$file['name']));
 		$desc         = JRequest::getVar('description');
 		$id           = (int) JRequest::getVar('id');
 		$tasks        = JRequest::getVar('tasks', array(), 'array');
 		$now          = time();
 		$name         = null;
 
-		if (@$file['name'] != '') {
+		if (@$file['name'] != '' && in_array($file['ext'], $exts)) {
 			$project  = $user->GetWorkspace();
 			$prefix1  = "project_".$project;
 			$prefix2  = uniqid(md5($file['name']).rand(1,1000))."_";
