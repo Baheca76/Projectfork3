@@ -399,6 +399,7 @@ class PFfilemanagerClass extends PFobject
 		
 		if ($allowed) {
 			$exts = explode(",",$allowed);
+			$exts = array_map("strtolower", $exts);
 		}
 		else {
 			$exts = array();
@@ -432,7 +433,7 @@ class PFfilemanagerClass extends PFobject
 				}
 
 				// Upload the file
-				if (in_array($file['ext'], $exts)){
+				if (in_array(strtolower($file['ext']), $exts)){
 					if (!JFile::upload($file['tmp_name'], $filepath.DS.$prefix2.strtolower($file['name']))) {
 						$i++;
 						$e = true;
@@ -561,6 +562,7 @@ class PFfilemanagerClass extends PFobject
 		
 		if ($allowed) {
 			$exts = explode(",",$allowed);
+			$exts = array_map("strtolower", $exts);
 		}
 		else {
 			$exts = array();
@@ -573,7 +575,7 @@ class PFfilemanagerClass extends PFobject
 		$now          = time();
 		$name         = null;
 
-		if (@$file['name'] != '' && in_array($file['ext'], $exts)) {
+		if (@$file['name'] != '' && in_array(strtolower($file['ext']), $exts)) {
 			$project  = $user->GetWorkspace();
 			$prefix1  = "project_".$project;
 			$prefix2  = uniqid(md5($file['name']).rand(1,1000))."_";
