@@ -24,13 +24,13 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
 // Projectfork version number
-if(!defined('PF_VERSION_NUM'))   define('PF_VERSION_NUM', 3011);
+if(!defined('PF_VERSION_NUM'))   define('PF_VERSION_NUM', 3012);
 
 // Projectfork version state
 if(!defined('PF_VERSION_STATE')) define('PF_VERSION_STATE', 'Stable');
 
 // Projectfork version string
-if(!defined('PF_VERSION_STRING')) define('PF_VERSION_STRING', 'Version 3.0.11 Stable');
+if(!defined('PF_VERSION_STRING')) define('PF_VERSION_STRING', 'Version 3.0.12 Stable');
 
 // Projectfork installer version
 if(!defined('PF_VERSION_EXTINS')) define('PF_VERSION_EXTINS', '2.2,3.0');
