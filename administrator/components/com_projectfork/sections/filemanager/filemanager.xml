@@ -18,6 +18,7 @@
 	      <option value="1">PFL_YES</option>
 	      <option value="0">PFL_NO</option>
 	   </param>
+	   <param type="text" name="allowed_exts" title="PFL_ALLOWED_EXTS" desc="PFL_ALLOWED_EXTS_DESC" value=""/>
 	   <param type="select" name="attach_folders" title="PFL_ATTACH_FOLDERS" desc="PFL_ATTACH_FOLDERS_DESC">
 	      <option value="1">PFL_YES</option>
 	      <option value="0">PFL_NO</option>
